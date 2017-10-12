@@ -1,6 +1,8 @@
 # 🌀 eslint-config-netzkern-base
 
-This package provides netzkern base JS .eslintrc as an extensible shared config.
+> This package provides netzkern base JS .eslintrc as an extensible shared config.
+
+- Extends [babel-preset-airbnb](https://github.com/airbnb/babel-preset-airbnb) for babel settings 
 
 ## Usage
 
@@ -74,6 +76,10 @@ Lints ES5 and below. Requires `eslint` and `eslint-plugin-import`.
 2. Add `"extends": "netzkern-base/legacy"` to your .eslintrc
 
 See [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) for more information.
+
+## Targeting Environments
+
+[Details](https://github.com/airbnb/babel-preset-airbnb#targeting-environments)
 
 ## Improving this config
 
