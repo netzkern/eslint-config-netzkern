@@ -1,4 +1,4 @@
-# eslint-config-netzkern-base
+# 🌀 eslint-config-netzkern-base
 
 This package provides netzkern base JS .eslintrc as an extensible shared config.
 
