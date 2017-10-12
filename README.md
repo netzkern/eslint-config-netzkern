@@ -93,6 +93,9 @@ You can make sure this module lints with itself using `npm run lint`.
 }
 ```
 
+## Tooling
+- Visual Studio Code [link](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
 ## Credits
 
 - [eslint-airbnb-config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
