@@ -12,70 +12,25 @@ We export two ESLint configurations for your usage.
 
 Our default export contains all of our ESLint rules, including ECMAScript 6+. It requires `eslint` and `eslint-plugin-import`.
 
-If you use yarn, run `npm info "eslint-config-netzkern-base@latest" peerDependencies` to list the peer dependencies and versions, then run `yarn add --dev <dependency>@<version>` for each listed peer dependency. See below for npm instructions.
-
 1. Install the correct versions of each package, which are listed by the command:
 
-  ```sh
-  npm info "eslint-config-netzkern-base@latest" peerDependencies
-  ```
-
-  Linux/OSX users can run
-  ```sh
-  (
-    export PKG=eslint-config-netzkern-base;
-    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-  )
-  ```
-
-  Which produces and runs a command like:
-
-  ```sh
-    npm install --save-dev eslint-config-netzkern-base eslint@^#.#.# eslint-plugin-import@^#.#.#
-  ```
-
-  Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
-
-  ```sh
-  npm install -g install-peerdeps
-  install-peerdeps --dev eslint-config-netzkern-base
-  ```
-
-  The cli will produce and run a command like:
-
-  ```sh
-  npm install --save-dev eslint-config-netzkern-base eslint@^#.#.# eslint-plugin-import@^#.#.#
-  ```
+```sh
+  npm install --save-dev eslint-config-netzkern-base eslint eslint-plugin-import
+```
 
 2. Add `"extends": "netzkern-base"` to your .eslintrc.
 
 ### eslint-config-netzkern-base/legacy
 
-Lints ES5 and below. Requires `eslint` and `eslint-plugin-import`.
+Lints ES5 and below. Requires `eslint`.
 
 1. Install the correct versions of each package, which are listed by the command:
 
-  ```sh
-  npm info "eslint-config-netzkern-base@latest" peerDependencies
-  ```
+```sh
+  npm install --save-dev eslint-config-netzkern-base eslint
+```
 
-  Linux/OSX users can run
-  ```sh
-  (
-    export PKG=eslint-config-netzkern-base;
-    npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG"
-  )
-  ```
-
-  Which produces and runs a command like:
-
-  ```sh
-  npm install --save-dev eslint-config-netzkern-base eslint@^3.0.1 eslint-plugin-import@^1.10.3
-  ```
-
-2. Add `"extends": "netzkern-base/legacy"` to your .eslintrc
-
-See [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) for more information.
+2. Add `"extends": "netzkern-base/legacy"` to your .eslintrc.
 
 ## Targeting Environments
 
